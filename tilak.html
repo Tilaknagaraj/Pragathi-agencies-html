@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="kn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ಪ್ರಗತಿ ಏಜೆನ್ಸಿ | Pragathi Agencies</title>
+    <style>
+        /* Reset default browser styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('background-pattern.png') repeat, linear-gradient(to bottom, #e0f2f1, #b9fbc0);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Styling */
+        header {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            background: linear-gradient(to right, #00b09b, #96c93d);
+            color: white;
+            padding: 20px;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s ease-in-out;
+        }
+
+        header img {
+            border-radius: 50%;
+            animation: subtleZoom 8s ease-in-out infinite, colorTransition 8s ease-in-out infinite;
+            max-width: 150px;
+            width: 100%;
+            height: auto;
+        }
+
+        header .info {
+            flex: 1;
+            margin-left: 20px;
+            min-width: 200px;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+
+        header p {
+            margin-bottom: 5px;
+            font-size: 1.2em;
+        }
+
+        /* Animations */
+        @keyframes subtleZoom {
+
+            0%,
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+
+            50% {
+                transform: scale(1.05);
+                opacity: 0.8;
+            }
+        }
+
+        @keyframes colorTransition {
+            0% {
+                filter: brightness(100%);
+            }
+
+            50% {
+                filter: brightness(110%);
+            }
+
+            100% {
+                filter: brightness(100%);
+            }
+        }
+
+        /* Navigation Styling */
+        nav {
+            background-color: #333;
+        }
+
+        nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul li {
+            flex: 1;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            background-color: #111;
+            transform: translateY(-2px);
+        }
+
+        /* Container Styling */
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* Section Styling */
+        .section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+
+        .section:hover {
+            background-color: rgba(255, 255, 255, 1);
+        }
+
+        .section h2 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+
+        .section hr {
+            border: 1px solid #ccc;
+            margin: 20px 0;
+        }
+
+        /* Products Grid Styling */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .product-item {
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        /* Contact Info Styling */
+        .contact-info {
+            list-style: none;
+            padding: 0;
+        }
+
+        .contact-info li {
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            header .info {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                flex: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <img src="logo.jpg" alt="Company Logo">
+        <div class="info">
+            <h1>ಪ್ರಗತಿ ಏಜೆನ್ಸಿ <p style="font-size: 20px; margin: 0;">PRAGATHI AGENCIES <span style="font-size: 16px;">SINCE 2006</span></p>
+            </h1>
+            <p>ಉತ್ತಮ ಕೃಷಿ ಪರಿಹಾರಗಳು | Best Agricultural Solutions</p>
+            <p>ಮಾರ್ಕೆಟ್ ರಸ್ತೆ, ಸಾಗರ 577202 | Market road, 577202 SAGARA<br>ದೂರವಾಣಿ ಸಂಖ್ಯೆ: 9019975936 | Phone number: 9019975936</p>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#about">ನಮ್ಮ ಬಗ್ಗೆ | About Us</a></li>
+            <li><a href="#services">ಸೇವೆಗಳು | Services</a></li>
+            <li><a href="#products">ಉತ್ಪನ್ನಗಳು | Products</a></li>
+            <li><a href="#contact">ಸಂಪರ್ಕ | Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Container -->
+    <div class="container">
+        <!-- About Section -->
+        <section id="about" class="section">
+            <h2>ನಮ್ಮ ಬಗ್ಗೆ | About Us</h2>
+            <hr>
+            <p>ಪ್ರಗತಿ ಏಜೆನ್ಸಿ ಉತ್ತಮ ಗುಣಮಟ್ಟದ ರಸಗೊಬ್ಬರಗಳು ಮತ್ತು ಕೃಷಿ ರಾಸಾಯನಿಕಗಳ ಪ್ರಮುಖ ಪೂರೈಕೆದಾರ. ಉದ್ಯಮದಲ್ಲಿ ವರ್ಷಗಳ ಅನುಭವದೊಂದಿಗೆ, ರೈತರಿಗೆ ಅವರ ಬೆಳೆ ಇಳುವರಿಯನ್ನು ಹೆಚ್ಚಿಸಲು ಮತ್ತು ಸುಸ್ಥಿರ ಕೃಷಿ ಪದ್ಧತಿಗಳನ್ನು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಲು ಉತ್ತಮ ಉತ್ಪನ್ನಗಳನ್ನು ಒದಗಿಸಲು ನಾವು ಬದ್ಧರಾಗಿದ್ದೇವೆ.<br>Pragathi Agencies is a leading supplier of high-quality fertilizers and agricultural chemicals. With years of experience in the industry, we are committed to providing farmers with the best products to enhance their crop yields and ensure sustainable farming practices.</p>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section">
+            <h2>ನಮ್ಮ ಸೇವೆಗಳು | Our Services</h2>
+            <ul>
+                <li>ಉತ್ತಮ ಗುಣಮಟ್ಟದ ರಸಗೊಬ್ಬರಗಳ ಪೂರೈಕೆ | Supply of high-quality fertilizers</li>
+                <li>ಕೃಷಿ ರಾಸಾಯನಿಕ ಉತ್ಪನ್ನಗಳು | Agricultural chemical products for pest control</li>
+                <li>ತಾಂತ್ರಿಕ ಬೆಂಬಲ ಮತ್ತು ಕೃಷಿ ಸಲಹೆ | Technical support and agricultural advice</li>
+            </ul>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="section">
+            <h2>ನಮ್ಮ ಉತ್ಪನ್ನಗಳು | Our Products</h2>
+            <div class="products-grid">
+                <div class="product-item">
+                    <h3>ನೈಟ್ರೋಜನ್ ಆಧಾರಿತ ರಸಗೊಬ್ಬರಗಳು | Nitrogen-Based Fertilizers</h3>
+                    <p>ತ್ವರಿತ ಪತ್ತೆಗಾಗಿ ಉತ್ಕೃಷ್ಟ ರಸಗೊಬ್ಬರಗಳು | High-efficiency fertilizers for rapid plant growth.</p>
+                </div>
+                <div class="product-item">
+                    <h3>ಫಾಸ್ಪೊರಸ್ ರಸಗೊಬ್ಬರಗಳು | Phosphorus Fertilizers</h3>
+                    <p>ಮೂಲೆಯ ಅಭಿವೃದ್ಧಿ ಮತ್ತು ಹೂವುಗಳಿಗೆ ಅಗತ್ಯವಿದೆ | Essential for root development and flowering.</p>
+                </div>
+                <div class="product-item">
+                    <h3>ಪestis ನಿಯಂತ್ರಣ ರಾಸಾಯನಿಕಗಳು | Pest Control Chemicals</h3>
+                    <p>ನಿಮ್ಮ ಬೆಳೆಗಳನ್ನು ಕೀಟಗಳಿಂದ ರಕ್ಷಿಸಲು ಪರಿಣಾಮಕಾರಿ ಪರಿಹಾರಗಳು | Effective solutions to protect your crops from pests.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2>ಸಂಪರ್ಕ | Contact Us</h2>
+            <p>ನಮ್ಮ ಉತ್ಪನ್ನಗಳು ಮತ್ತು ಸೇವೆಗಳ ಬಗ್ಗೆ ಹೆಚ್ಚು ಮಾಹಿತಿಗಾಗಿ, ದಯವಿಟ್ಟು ನಮ್ಮೊಂದಿಗೆ ಸಂಪರ್ಕ ಮಾಡಿರಿ.<br>For more information about our products and services, please get in touch with us.</p>
+            <ul class="contact-info">
+                <li><strong>ಸುದ್ದಿ | Address:</strong> 123 ಹಸಿರು ತೋಟಗಳು, ಫಾರ್ಮ್‌ವಿಲ್ಲೆ, ಕಂಟ್ರಿ | 123 Green Fields, Farmville, Country</li>
+                <li><strong>ಇಮೇಲ್ | Email:</strong> contact@greengrow.com</li>
+                <li><strong>ಫೋನ್ | Phone:</strong> +123 456 7890</li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy;೨೦೨೪ ಎಲ್ಲಾ ಹಕ್ಕುಗಳು ಕಾಯಲಾಗಿದೆ ಪ್ರಗತಿ ಏಜೆನ್ಸಿ | &copy; 2024 All rights reserved Pragathi Agencies </p>
+    </footer>
+
+</body>
+
+</html>
